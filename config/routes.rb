@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
 
-  root to: 'workouts#index'  
+  root to: 'dashboard#index'  
 end

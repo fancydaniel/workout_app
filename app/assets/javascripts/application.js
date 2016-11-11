@@ -11,7 +11,13 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery-ui/datepicker
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
+
+
+$(document).ready(function(){
+  $('#workout-date').datepicker({ dateFormat: 'dd-mm-yy' });
+});

@@ -12,8 +12,8 @@ RSpec.feature "Listing Exercises" do
     fill_in "Password", with: @john.password
     click_button "Log in"
 
-    @e1 = @john.exercises.create(duration_in_min: 20, workout: "Weights", workout_date: "2015-08-09", user: @john)
-    @e2 = @john.exercises.create(duration_in_min: 20, workout: "Cardio", workout_date: "2015-08-09", user: @john)
+    @e1 = @john.exercises.create(duration_in_min: 20, workout: "Weights", workout_date: Date.today, user: @john)
+    @e2 = @john.exercises.create(duration_in_min: 20, workout: "Cardio", workout_date: Date.today, user: @john)
   end
 
   scenario "shows user's workout" do
